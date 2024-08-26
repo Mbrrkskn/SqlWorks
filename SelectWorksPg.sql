@@ -61,3 +61,10 @@ select * from suppliers where country != 'USA'
 
 --Kendi database'imizi oluşturma
 --Normalization 
+select * from employees where firstname like '[AM]%'
+select * from employees where firstname like '%[al]%' 
+--firstname alaninda isimlerin j-r arasinda olan kayitlarin getirilmesi
+select * from employees where firstname like '[j-r]%' order by FirstName
+
+
+Select GetDate()
